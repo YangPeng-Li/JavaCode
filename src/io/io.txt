@@ -1,0 +1,72 @@
+IO类分割为输入和输出两个部分
+从InputSream 	衍生的所有类都有read()
+从OutputStream	衍生的所有类都有write()
+Java 流库异常复杂，正是为了创建一个结果流，需要创建多个对象的缘故；
+站在内存的角度：
+		 将数据从硬盘读到到内存，输入流
+		将数据从内存写到硬盘的文件上输出流
+
+流的单位：字节流、字符流
+InputStream （字节流）：
+	字节数组
+	String对象
+	文件
+	管道（流）
+	其他起源地
+OutputStream（字节流）：
+
+InputStream 
+------------FileInputSream
+------------Object
+------------Piped
+------------Sequence
+------------Fileter  <-------	DataInputStream 
+------------StringBuffer	    PushbackInputStream
+------------ByteArray			BuffreredInputStream
+								LineNumberInputStream
+										
+OutputStream
+--------------FileOutputStream
+			  objectOutputStram
+			  Filter <----------------	Data
+			  						    Buffered
+			  Piped						Print
+			  ByteArray
+Reader			  
+			 BufferedReader	<---------LineNumberReader
+			 CharArrayReader
+			 StringReader
+			 InputStreamReader<------FileReader
+			 PipedReader
+			 FilerReader <----------PushbackReader
+
+Writer		   BufferedWriter
+		       CharArray
+		       String
+		       OutputStream <-------File
+		       Print
+		       Piped
+		       Filter				 
+包装流（在节点流或处理流基础之上，进一步封装） 
+节点流（直接操作数据）
+
+DataSource --->FileInputStream--->BufferedInputStream---->DataInputStream-->Progream
+DataSource <---FileInputStream<---BufferedInputStream<----DataInputStream<--Progream
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	

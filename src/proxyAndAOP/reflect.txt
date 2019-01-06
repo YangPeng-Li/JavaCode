@@ -1,0 +1,16 @@
+Java 反射机制提供的功能：
+在运行时判断任意一个对象所属的类
+在运行时构造任意一个类的对象
+在运行时判断任意一个类的成员变量和方法
+生成动态代理
+
+反射反射相关的API
+java.lang.class：代表一个类
+java.lang.reflect.Method:代表类的方法
+java.lang.reflect.Field:代表类的成员变量
+java.lang.reflect.Contrcutor:代表类的构造方法
+
+
+创建运行时类
+Class clazz =  Person.class; //Person.class文件充当了Class的一个实例
+clazz 在占空间指向对空间Person.class Person类的结构成员暴露出来

@@ -1,0 +1,6 @@
+集合类：
+Vector (矢量)、BitSet(位集)、Stack(堆积)、Hashtable(散列表)
+
+List LinkedList ArrayList Vector
+Set TreeSet LinkedHashSet Hash Set
+Map TreeMap HashMap LinkedHashMap HashTable
